@@ -132,18 +132,26 @@ h1 {
 
 .experiencia {
   width: 100%;
-  padding: 40px 40px 60px 40px;
+  height: 100%;
+  padding: 100px;
 }
 
-.experiencia .columna {
-  padding: 20px;
+#exp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.columna {
+  padding: 30px 20px;
   border: 2px solid #8080804d;
   display: block;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   transition: all 0.2s ease-in;
   border-radius: 5rem;
+  height: 100%;
 }
 
 .experiencia .columna:hover {
@@ -166,12 +174,20 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.experiencia-text
+{
+  min-height: 43%;
 }
 
 .badges-contenedor {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 5px 20px;
+  margin-bottom: 30px;
 }
 
 .badge {
@@ -194,7 +210,7 @@ h1 {
   display: block;
   transition: all 0.35s ease;
   box-shadow: #505050 3px 3px 5px;
-  margin-bottom: 20px;
+  margin-bottom: 20px 0px;
 }
 
 .proyectos-contenedor {
@@ -220,6 +236,12 @@ h1 {
 
 .proyecto {
   position: relative;
+  height: 90%;
+}
+
+.proyecto img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .proyecto:hover img {
